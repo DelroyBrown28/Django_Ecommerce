@@ -24,7 +24,10 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'b015462b41a4.ngrok.io',
+    '127.0.0.1',
+]
 
 
 # Application definition
@@ -172,3 +175,4 @@ STANDARD_DELIVERY_PERCENTAGE = 10
 STRIPE_CURRENCY = 'usd'
 STRIPE_PUBLIC_KEY = config('STRIPE_PUBLIC_KEY', '')
 STRIPE_SECRET_KEY = config('STRIPE_SECRET_KEY', '')
+STRIPE_WH_SECRET = config('STRIPE_WH_SECRET', '')
