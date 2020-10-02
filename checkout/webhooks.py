@@ -6,6 +6,9 @@ from decouple import config
 from checkout.webhook_handler import StripeWH_Handler
 import stripe
 
+# For Stripe webhook
+endpoint_secret = config('STRIPE_ENDPOINT_SECRET')
+
 
 @require_POST
 @csrf_exempt
