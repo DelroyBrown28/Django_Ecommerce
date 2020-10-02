@@ -25,7 +25,7 @@ SECRET_KEY = config('SECRET_KEY')
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'b015462b41a4.ngrok.io',
+    'e818f9835239.ngrok.io',
     '127.0.0.1',
 ]
 
