@@ -1,4 +1,8 @@
 from django.http import HttpResponse
+from django.core.mail import send_mail
+from django.template.loader import render_to_string
+from django.conf import settings
+from decouple import config
 from .models import Order, OrderLineItem
 from products.models import Product
 from profiles.models import UserProfile
@@ -11,6 +15,22 @@ class StripeWH_Handler:
 
     def __init__(self, request):
         self.request = request
+
+    def _send_confirmation_email(self, order):
+        """Sends the user a confirmation email"""
+        cust_email = order.email
+        subject = render_to_string(
+            'checkout/confirmation_emails/confirmation_email_subject.txt',
+            {'order': order})
+        body = render_to_string(
+            'checkout/confirmation_emails/confirmation_email_body.txt',
+            {'order': order, 'contact_email': settings.DEFAULT_FROM_EMAIL})
+        send_mail(
+            subject,
+            body,
+            settings.DEFAULT_FROM_EMAIL,
+            [cust_email]
+        )
 
     def handle_event(self, event):
         """
@@ -43,15 +63,14 @@ class StripeWH_Handler:
         if username != 'AnonymouseUser':
             profile = UserProfile.objects.get(user__username=username)
             if save_info:
-                default_phone_number__iexact=shipping_details.phone,
-                default_country__iexact=shipping_details.address.country,
-                default_postcode__iexact=shipping_details.address.postal_code,
-                default_town_or_city__iexact=shipping_details.address.city,
-                default_street_address1__iexact=shipping_details.address.line1,
-                default_street_address2__iexact=shipping_details.address.line2,
-                default_county__iexact=shipping_details.address.state,
+                default_phone_number__iexact = shipping_details.phone,
+                default_country__iexact = shipping_details.address.country,
+                default_postcode__iexact = shipping_details.address.postal_code,
+                default_town_or_city__iexact = shipping_details.address.city,
+                default_street_address1__iexact = shipping_details.address.line1,
+                default_street_address2__iexact = shipping_details.address.line2,
+                default_county__iexact = shipping_details.address.state,
                 profile.save()
-
 
         order_exists = False
         attempt = 1
@@ -77,6 +96,7 @@ class StripeWH_Handler:
                 attempt += 1
                 time.sleep(1)
         if order_exists:
+            self._send_confirmation_email(order)
             return HttpResponse(
                 content=f'Webhook received: {event["type"]} | SUCCESS: Verified order already in database',
                 status=200)
@@ -121,7 +141,7 @@ class StripeWH_Handler:
                     order.delete()
                 return HttpResponse(content=f'Webhook received: {event["type"]} | {e}',
                                     status=500)
-
+        self._send_confirmation_email(order)
         return HttpResponse(
             content=f'Webhook received: {event["type"]}',
             status=200)
