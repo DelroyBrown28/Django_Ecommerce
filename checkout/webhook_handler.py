@@ -1,3 +1,4 @@
+import os
 from django.http import HttpResponse
 from django.core.mail import send_mail
 from django.template.loader import render_to_string
@@ -24,11 +25,11 @@ class StripeWH_Handler:
             {'order': order})
         body = render_to_string(
             'checkout/confirmation_emails/confirmation_email_body.txt',
-            {'order': order, 'contact_email': config('DEFAULT_FROM_EMAIL')})
+            {'order': order, 'contact_email': os.environ.get('DEFAULT_FROM_EMAIL')})
         send_mail(
             subject,
             body,
-            config('DEFAULT_FROM_EMAIL'),
+            os.environ.get('DEFAULT_FROM_EMAIL'),
             [cust_email]
         )
 

@@ -1,3 +1,4 @@
+import os
 from django.conf import settings
 from django.http import HttpResponse
 from django.views.decorators.http import require_POST
@@ -7,7 +8,7 @@ from checkout.webhook_handler import StripeWH_Handler
 import stripe
 
 # For Stripe webhook
-endpoint_secret = config('STRIPE_ENDPOINT_SECRET')
+endpoint_secret = os.environ.get('STRIPE_ENDPOINT_SECRET')
 
 
 @require_POST
@@ -15,8 +16,8 @@ endpoint_secret = config('STRIPE_ENDPOINT_SECRET')
 def webhook(request):
     """Listen for webhooks from Stripe"""
     # Setup
-    wh_secret = config('STRIPE_WH_SECRET')
-    stripe.api_key = config('STRIPE_SECRET_KEY')
+    wh_secret = os.environ.get('STRIPE_WH_SECRET')
+    stripe.api_key = os.environ.get('STRIPE_SECRET_KEY')
 
     # Get the webhook data and verify its signature
     payload = request.body

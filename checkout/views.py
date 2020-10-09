@@ -1,4 +1,5 @@
 
+import os
 from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponse
 from django.views.decorators.http import require_POST
 from django.contrib import messages
@@ -19,7 +20,7 @@ import json
 def cache_checkout_data(request):
     try:
         pid = request.POST.get('client_secret').split('_secret')[0]
-        stripe.api_key = config('STRIPE_SECRET_KEY')
+        stripe.api_key = os.environ.get('STRIPE_SECRET_KEY')
         stripe.PaymentIntent.modify(pid, metadata={
             'bag': json.dumps(request.session.get('bag', {})),
             'save_info': request.POST.get('save_info'),
@@ -33,8 +34,8 @@ def cache_checkout_data(request):
 
 
 def checkout(request):
-    stripe_public_key = config('STRIPE_PUBLIC_KEY')
-    stripe_secret_key = config('STRIPE_SECRET_KEY')
+    stripe_public_key = os.environ.get('STRIPE_PUBLIC_KEY')
+    stripe_secret_key = os.environ.get('STRIPE_SECRET_KEY')
 
     if request.method == 'POST':
         bag = request.session.get('bag', {})
@@ -102,7 +103,7 @@ def checkout(request):
         stripe.api_key = stripe_secret_key
         intent = stripe.PaymentIntent.create(
             amount=stripe_total,
-            currency=config('STRIPE_CURRENCY'),
+            currency=os.environ.get('STRIPE_CURRENCY'),
         )
 
         if request.user.is_authenticated:
