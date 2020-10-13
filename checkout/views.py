@@ -125,13 +125,11 @@ def checkout(request):
         else:
             order_form = OrderForm()
 
-
-
     if not stripe_public_key:
         messages.warning(request, 'Stripe public key is missing. \
             Did you forget to set it in your environment?')
 
-    template = '/checkout/checkout.html'
+    template = 'checkout/checkout.html'
     context = {
         'order_form': order_form,
         'stripe_public_key': stripe_public_key,
@@ -176,7 +174,7 @@ def checkout_success(request, order_number):
     if 'bag' in request.session:
         del request.session['bag']
 
-    template = 'checkout/checkout_success.html'
+    template = 'checkout/templates/checkout/checkout_success.html'
     context = {
         'order': order,
     }
