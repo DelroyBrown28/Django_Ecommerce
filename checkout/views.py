@@ -103,7 +103,7 @@ def checkout(request):
         stripe.api_key = stripe_secret_key
         intent = stripe.PaymentIntent.create(
             amount=stripe_total,
-            currency=os.environ.get('STRIPE_CURRENCY'),
+            currency=settings.STRIPE_CURRENCY,
         )
 
         if request.user.is_authenticated:
