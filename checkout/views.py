@@ -174,7 +174,7 @@ def checkout_success(request, order_number):
     if 'bag' in request.session:
         del request.session['bag']
 
-    success_template = 'checkout/checkout_success.html'
+    success_template = '/checkout_success.html'
     context = {
         'order': order,
     }
