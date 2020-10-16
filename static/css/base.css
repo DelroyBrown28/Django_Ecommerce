@@ -46,6 +46,8 @@ body {
     border: 1px solid #000;
 }
 
+::-webkit-scrollbar
+
 .shop-now-button:hover,
 .shop-now-button:active,
 .shop-now-button:focus,
