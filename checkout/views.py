@@ -174,5 +174,4 @@ def checkout_success(request, order_number):
     if 'bag' in request.session:
         del request.session['bag']
 
-    checkout_success_url = 'checkout_success/'+str(order)
-    return HttpResponseRedirect(checkout_success_url)
+    HttpResponseRedirect(reverse('checkout_success', args=(order))
