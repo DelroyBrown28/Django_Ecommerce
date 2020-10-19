@@ -20,7 +20,7 @@ import json
 def cache_checkout_data(request):
     try:
         pid = request.POST.get('client_secret').split('_secret')[0]
-        stripe.api_key = settings.STRIPE_SECRET_KEY
+        stripe.api_key = "sk_test_51HX5u6A1fnSIB3Kmi9YWFTtgVrcE0bOv5zNYToTO4aAqCY4aYD6LPAhAwxvyGC7LIxYG5S402ylsKkrjWnonqmCH00Oq6E6YtR"
         stripe.PaymentIntent.modify(pid, metadata={
             'bag': json.dumps(request.session.get('bag', {})),
             'save_info': request.POST.get('save_info'),
@@ -34,8 +34,8 @@ def cache_checkout_data(request):
 
 
 def checkout(request):
-    stripe_public_key = settings.STRIPE_PUBLIC_KEY
-    stripe_secret_key = settings.STRIPE_SECRET_KEY
+    stripe_public_key = "pk_test_51HX5u6A1fnSIB3Km43MupzPhDdzE3QyyAOUnwsbTnovphUUDBuyIEDZDXo3rNw5SQHBkDuqo3keliCWShvZ3PGdN00gKgCOG4V"
+    stripe_secret_key = "sk_test_51HX5u6A1fnSIB3Kmi9YWFTtgVrcE0bOv5zNYToTO4aAqCY4aYD6LPAhAwxvyGC7LIxYG5S402ylsKkrjWnonqmCH00Oq6E6YtR"
 
     if request.method == 'POST':
         bag = request.session.get('bag', {})
@@ -100,7 +100,7 @@ def checkout(request):
         current_bag = bag_contents(request)
         total = current_bag['grand_total']
         stripe_total = round(total * 100)
-        stripe.api_key = settings.STRIPE_SECRET_KEY
+        stripe.api_key = "sk_test_51HX5u6A1fnSIB3Kmi9YWFTtgVrcE0bOv5zNYToTO4aAqCY4aYD6LPAhAwxvyGC7LIxYG5S402ylsKkrjWnonqmCH00Oq6E6YtR"
         intent = stripe.PaymentIntent.create(
             amount=stripe_total,
             currency=settings.STRIPE_CURRENCY,
@@ -132,7 +132,7 @@ def checkout(request):
     template = 'checkout/checkout.html'
     context = {
         'order_form': order_form,
-        'stripe_public_key': settings.STRIPE_PUBLIC_KEY,
+        'stripe_public_key': "pk_test_51HX5u6A1fnSIB3Km43MupzPhDdzE3QyyAOUnwsbTnovphUUDBuyIEDZDXo3rNw5SQHBkDuqo3keliCWShvZ3PGdN00gKgCOG4V",
         'client_secret': intent.client_secret,
     }
 
@@ -171,7 +171,9 @@ def checkout_success(request, order_number):
         Your order number is {order_number}. A confirmation \
         email will be sent to {order.email}.')
 
-    if 'bag' in request.session:
-        del request.session['bag']
+    template = 'checkout/checkout_success.html'
+    context = {
+        'order': order,
+    }
 
-    HttpResponseRedirect(reverse('checkout_success',args=(order)))
+    return render(request, template, context)
