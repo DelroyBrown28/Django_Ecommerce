@@ -171,7 +171,7 @@ def checkout_success(request, order_number):
         Your order number is {order_number}. A confirmation \
         email will be sent to {order.email}.')
 
-    template = 'checkout/checkout_success.html'
+    template = 'checkout/checkout.html'
     context = {
         'order': order,
     }
