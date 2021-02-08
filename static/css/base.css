@@ -6,8 +6,8 @@ body {
     background: url(/static/images/homepage_background_cropped.jpg) no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
-    color: #555;
-    font-family: 'Lato';
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
     scroll-behavior: smooth;
 }
 
@@ -25,13 +25,62 @@ body {
     text-transform: uppercase;
 }
 
+.stronger {
+    font-weight: 600;
+}
+
+.main-title-logo {
+    color: #333;
+    font-weight: 300;
+}
+
 .main-logo-link {
     width: fit-content;
 }
 
+.new-collections-text {
+    color: #F0F1EA;
+    font-weight: 500;
+}
+
+.free-delivery-text {
+    font-size: 1.2rem;
+    padding: 5px 0px;
+    text-transform: uppercase;
+}
+
+.main-page-header {
+    background-color: #F0F1EA;
+}
+
+#topnav {
+    background-color: #F0F1EA;
+
+}
+
+.free-delivery-wrap {
+    background-color: #333;
+    color: #F0F1EA;
+}
+
+.card-footer, .card-body {
+    background-color: #F0F1EA;
+
+}
+
+#sort-selector {
+    background-color: transparent;
+}
+
+.search-bar {
+    background-color: transparent;
+}
+
 .shop-now-button {
-    background: black;
-    color: white;
+    background: #F0F1EA;
+    color: #333;
+    font-weight: 800;
+    font-size: 1.3rem;
     min-width: 260px;
 }
 
@@ -46,7 +95,6 @@ body {
     border: 1px solid #000;
 }
 
-::-webkit-scrollbar
 
 .shop-now-button:hover,
 .shop-now-button:active,
@@ -54,8 +102,8 @@ body {
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: #222;
-    color: white;
+    background: #333;
+    color: #F0F1EA;
 }
 
 .text-black {
@@ -70,13 +118,24 @@ body {
     background: #000 !important;
 }
 
+.signin-btn {
+    color: #F0F1EA;
+    background-color: #333 !important;
+}
+
+.basic-btn-style {
+    background-color: #F0F1EA;
+    color: #333 !important;
+    border: 1px solid #333;
+}
+
 .overlay {
     height: 100%;
     width: 100%;
     top: 0;
     left: 0;
     position: fixed;
-    background: #fff;
+    background: #F0F1EA;
     z-index: -1;
 }
 
@@ -230,6 +289,7 @@ input[name='q']::placeholder {
 .allauth-form-inner-content input::placeholder {
     color: #aab7c4;
 }
+
 
 .allauth-form-inner-content button,
 .allauth-form-inner-content input[type='submit'] {
