@@ -63,7 +63,8 @@ body {
     color: #F0F1EA;
 }
 
-.card-footer, .card-body {
+.card-footer,
+.card-body {
     background-color: #F0F1EA;
 
 }
@@ -341,3 +342,4 @@ input[name='q']::placeholder {
         padding-top: 164px;
     }
 }
+

@@ -146,13 +146,13 @@
     "model": "products.product",
     "fields": {
         "sku": "pp5002820069",
-        "name": "Nike 3-pk. Performance Crew Socks - Boys",
-        "description": "Keep him moving in comfort all day with quality Nike crew socks.  arch support reinforced toe and heel cotton/polyester/spandex washable imported",
+        "name": "Sluurve Warmer",
+        "description": "Men's fashion trend to thicken warm winter casual glossy coat",
         "price": 19.99,
         "category": 1,
         "rating": 4.6,
-        "image_url": "http://s7d2.scene7.com/is/image/JCPenney/DP0510201317010521M.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
-        "image": "DP0510201317010521M.jpg"
+        "image_url": "media/jacket1.jpeg",
+        "image": "jacket1.jpeg"
     }
 }, {
     "pk": 13,
@@ -614,13 +614,13 @@
     "model": "products.product",
     "fields": {
         "sku": "pp5004650050",
-        "name": "Jacques Mort 2-pk. Short-Sleeve Leotard - Girls",
-        "description": "Shell get plenty of use from this versatile short-sleeve leotard from Jacques Moret.  nylon washable imported",
+        "name": "Leather Chump Jacket",
+        "description": "Casual black fur coat",
         "price": 34.99,
         "category": 1,
         "rating": 3.0,
-        "image_url": "http://s7d2.scene7.com/is/image/JCPenney/DP0919201417043014M.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
-        "image": "DP0919201417043014M.jpg"
+        "image_url": "media/jacket2.jpeg",
+        "image": "jacket2.jpeg"
     }
 }, {
     "pk": 49,
@@ -1056,13 +1056,13 @@
     "model": "products.product",
     "fields": {
         "sku": "pp5005820197",
-        "name": "Nike Therma-FIT Pullover Hoodie - Boys 8-20",
-        "description": "Add a cozy layer to any game-ready style with this insulated performance hoodie, featuring a pullover design and Therma-FIT fabric for warmth. Therma-FIT microfiber fleece fabric keeps you warm and insulated mesh-lined hood for breathable coverage long sleeves ribbed cuffs and hem kangaroo pocket polyester washable imported",
+        "name": "Cozy Winter Warmer",
+        "description": "Autumn and winter fashion casual cotton jacket",
         "price": 48.99,
         "category": 1,
         "rating": 4.9,
-        "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP1008201517035763M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
-        "image": "DP1008201517035763M.jpg"
+        "image_url": "media/jacket3.jpeg",
+        "image": "jacket3.jpeg"
     }
 }, {
     "pk": 83,
@@ -1147,13 +1147,13 @@
     "model": "products.product",
     "fields": {
         "sku": "pp5005870183",
-        "name": "Made For Life Mesh Jacket - Plus",
-        "description": "Layer our moisture-wicking mesh jacket over a tee or tank for breathable comfort all day long. Quick-Dri moisture-wicking fabric helps keep you dry front pockets approx. 27\" - 28\" length polyester washable imported",
+        "name": "Green Snaz Jacket",
+        "description": "Retro gradient fur coat",
         "price": 52.99,
         "category": 1,
         "rating": 5.0,
-        "image_url": "http://s7d2.scene7.com/is/image/JCPenney/DP0724201517031934M.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
-        "image": "DP0724201517031934M.jpg"
+        "image_url": "media/jacket4.jpeg",
+        "image": "jacket4.jpeg"
     }
 }, {
     "pk": 90,
@@ -1186,13 +1186,13 @@
     "model": "products.product",
     "fields": {
         "sku": "pp5005910565",
-        "name": "Made For Life Long-Sleeve Flyaway Cardigan",
-        "description": "Pull your look together with our fluid, fine-gauge knit flyaway cardigan, an easy-going, lightweight layer for all your casual looks. cotton/polyester washable imported",
+        "name": "Zebra Faux Fur",
+        "description": "Retro gradient fur coat",
         "price": 50.99,
         "category": 1,
         "rating": 4.3,
-        "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0731201517031510M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
-        "image": "DP0731201517031510M.jpg"
+        "image_url": "media.jacket5.jpeg",
+        "image": "jacket5.jpeg"
     }
 }, {
     "pk": 93,
@@ -1355,13 +1355,13 @@
     "model": "products.product",
     "fields": {
         "sku": "pp5006160833",
-        "name": "Made For Life Polar Fleece Vest",
-        "description": "Add a lightweight layer of warmth to any outfit with our soft and plush plaid polar fleece vest. zip front front pockets polyester washable imported misses: approx. 26\" - 28\" front length petite: approx. 23\" - 25\" front length",
+        "name": "King's Throne Jacket",
+        "description": "Made for life leather & faux fur jacket.",
         "price": 30.99,
         "category": 1,
         "rating": 4.8,
-        "image_url": "http://s7d2.scene7.com/is/image/JCPenney/DP0929201502575389M.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
-        "image": "DP0929201502575389M.jpg"
+        "image_url": "media/jacket6.jpeg",
+        "image": "jacket6.jpeg"
     }
 }, {
     "pk": 106,
@@ -1524,26 +1524,26 @@
     "model": "products.product",
     "fields": {
         "sku": "pp5006280190",
-        "name": "Liz Claiborne Long-Sleeve V-Neck Striped Tunic",
-        "description": "Our Liz Claiborne striped tunic gives you that comfortable fit with a modern flare hem with just the right amount of movement. v-neck long sleeves rayon/spandex washable imported",
+        "name": "Big Bear Jacket (with ears)",
+        "description": "Casual bear fur jacket, real fur, wanna fight about it?",
         "price": 44.99,
         "category": 1,
         "rating": 5.0,
-        "image_url": "http://s7d2.scene7.com/is/image/JCPenney/DP1030201517035843M.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
-        "image": "DP1030201517035843M.jpg"
+        "image_url": "media/jacket8.jpeg",
+        "image": "jacket8.jpeg"
     }
 }, {
     "pk": 119,
     "model": "products.product",
     "fields": {
         "sku": "pp5006291997",
-        "name": "Xersion Colorblock Yoga Shorts - Girls 7-16 and Plus",
-        "description": "From the yoga studio to the couch, these yoga shorts will keep her comfy during all her daily activities and feature cool contrasted side panels for an extra bit of flair.  black/aqua/green: cotton/spandex gray/pink/orange: cotton/polyester/spandex washable imported",
+        "name": "Big Bird Jacket",
+        "description": "Unisex jacket made from the actual skin of Sesame Streets 'Big Bird'. (limited availability)",
         "price": 19.99,
         "category": 1,
         "rating": 5.0,
-        "image_url": "http://s7d2.scene7.com/is/image/JCPenney/DP1119201517043586M.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
-        "image": "DP1119201517043586M.jpg"
+        "image_url": "media/jacket16.jpeg",
+        "image": "jacket16.jpeg"
     }
 }, {
     "pk": 120,
@@ -1563,13 +1563,13 @@
     "model": "products.product",
     "fields": {
         "sku": "pp5006310446",
-        "name": "Xersion Short-Sleeve V-Neck Graphic Tee - Girls 7-16 and Plus",
-        "description": "Youre always a winner with this sporty graphic t-shirt that shows your love of soccer. cotton/polyester washable imported",
+        "name": "Simple Simon Jacket",
+        "description": "Simple Jacket made from bits of fluff from under my couch, selling fast!",
         "price": 19.99,
         "category": 1,
         "rating": 4.4,
-        "image_url": "http://s7d2.scene7.com/is/image/JCPenney/DP1222201517041287M.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
-        "image": "DP1222201517041287M.jpg"
+        "image_url": "media/jacket15.jpeg",
+        "image": "jacket15.jpeg"
     }
 }, {
     "pk": 122,
@@ -1797,26 +1797,26 @@
     "model": "products.product",
     "fields": {
         "sku": "pp5006470681",
-        "name": "Champion Vapor Muscle Tank - Plus",
-        "description": "Keep cool and dry during your workout in our muscle tank, made from Champion Vapor moisture-wicking fabric and featuring Fresh IQ technology for odor protection. Champion Vapor technology Fresh IQ technology targeted ventilation for breathability chafe-resistant flatlock seams reflective detail for visibility crewneck polyester washable imported",
+        "name": "Red Boi",
+        "description": "A very warm and snug jacket that MUST NOT be worn in Crip neighbourhoods!",
         "price": 28.99,
         "category": 1,
         "rating": 3.0,
-        "image_url": "http://s7d2.scene7.com/is/image/JCPenney/DP0217201617084849M.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
-        "image": "DP0217201617084849M.jpg"
+        "image_url": "media/jacket14.jpeg",
+        "image": "jacket14.jpeg"
     }
 }, {
     "pk": 142,
     "model": "products.product",
     "fields": {
         "sku": "pp5006511030",
-        "name": "Xersion Mesh-Back Tank Top - Plus",
-        "description": "Power through your workout with our quick dry tank top with mesh back for ventilation. quick dry no chafe seams mesh back for ventilation polyester/spandex washable imported",
-        "price": 35.99,
+        "name": "Off Grey Fur Sleeved Jacket",
+        "description": "KEep you wrists warm with this beautifully crafted fur sleeved jacket. Fur made from real bBald Eagle (limited availability).",
+        "price": 350.99,
         "category": 1,
         "rating": 5.0,
-        "image_url": "http://s7d2.scene7.com/is/image/JCPenney/DP0309201620474626C.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
-        "image": "DP0309201620474626C.jpg"
+        "image_url": "media/jacket13.jpeg",
+        "image": "jacket13.jpeg"
     }
 }, {
     "pk": 143,
@@ -1927,13 +1927,13 @@
     "model": "products.product",
     "fields": {
         "sku": "pp5006790372",
-        "name": "Made for Life Secretly Slender Capri Leggings - Plus",
-        "description": "Add comfort and versatility to your wardrobe by incorporating these mid-rise capri leggings into the mix. 21\" inseam cotton/polyester/spandex washable imported",
+        "name": "Neo The Matrix Jacket",
+        "description": "Blue pill or red pill? either way you're winning in this Matrix styled jacket.",
         "price": 46.99,
         "category": 1,
         "rating": 5.0,
-        "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0316201621115243C.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
-        "image": "DP0316201621115243C.jpg"
+        "image_url": "media/jacket10.jpeg",
+        "image": "jacket10.jpeg"
     }
 }, {
     "pk": 152,
