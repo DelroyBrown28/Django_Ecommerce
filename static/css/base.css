@@ -1,14 +1,29 @@
+/* 
+=======
+HELPERS
+=======
+*/
+
+.redborder {
+    border: 1px solid red;
+}
+
+
 html {
     height: 100%;
 }
 
 body {
-    background: url(/static/images/homepage_background_cropped.jpg) no-repeat center center fixed;
-    background-size: cover;
+    
     height: calc(100vh - 164px);
     color: #333;
     font-family: 'Montserrat', sans-serif;
     scroll-behavior: smooth;
+}
+
+.index-page-body {
+    background: no-repeat center center fixed;
+    background-size: cover !important;
 }
 
 
