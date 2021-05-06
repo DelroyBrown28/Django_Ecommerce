@@ -1,3 +1,12 @@
 from django.contrib import admin
+from .models import HomePageCustomisation
 
-# Register your models here.
+
+class HomePageCustomisationAdmin(admin.ModelAdmin):
+    list_display = (
+        'home_page_title',
+        'image',
+    )
+
+
+admin.site.register(HomePageCustomisation)

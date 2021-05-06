@@ -14,16 +14,29 @@ html {
 }
 
 body {
-    
     height: calc(100vh - 164px);
     color: #333;
     font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
     scroll-behavior: smooth;
 }
 
 .index-page-body {
-    background: no-repeat center center fixed;
-    background-size: cover !important;
+    
+    width: fit-content;
+    
+    
+}
+
+.home-page-bg-img-wrap {
+    position: absolute;
+    height: 100vh;
+}
+
+.home-page-bg-image {
+    /* position: absolute; */
+    height: 100%;
+    z-index: 100;
 }
 
 
@@ -56,6 +69,8 @@ body {
 .new-collections-text {
     color: #F0F1EA;
     font-weight: 500;
+    width: 100%;
+
 }
 
 .free-delivery-text {
