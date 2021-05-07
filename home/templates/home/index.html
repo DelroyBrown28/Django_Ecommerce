@@ -3,17 +3,11 @@
 
 {% block content %}
 
-
-
-
-
-
 <body class="index-page-body" style="background: url({{ HomePageCustomisation.image.url }});">
 
     <div class="home-page-bg-img-wrap">
         {% for home_page_custom in home_page_customisation  %}
         <img class="home-page-bg-image" src="{{ home_page_custom.image.url }}">
-        <p></p>
         {% endfor %}
     </div>
 

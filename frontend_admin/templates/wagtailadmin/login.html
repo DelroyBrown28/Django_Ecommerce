@@ -1,0 +1,13 @@
+{% extends "wagtailadmin/login.html" %}
+{% load i18n wagtailadmin_tags %}
+
+
+{% block branding_login %}Welcome to your NueUi CMS{% endblock %}
+
+{% block below_login %}
+
+    <a href="/admin/" type="submit" class="button button-longrunning"
+        data-clicked-text="{% trans 'Signing in…' %}">{% icon name="spinner" %}<em>{% trans 'Business Login' %}</em>
+</a>
+
+{% endblock below_login %}

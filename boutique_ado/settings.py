@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'wagtail.documents',
     'wagtail.images',
     'wagtail.search',
+    'frontend_admin',
     'wagtail.admin',
     'wagtail.core',
     'wagtailfontawesome',
