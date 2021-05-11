@@ -1,5 +1,16 @@
 @charset "UTF-8";
 
+.redborder {
+    border: 1px solid red;
+}
+
+.flexed {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
 html {
     background: #e6e6e6;
     height: 100%
@@ -4363,6 +4374,7 @@ header.merged {
 header.tab-merged {
     padding-left: 50px;
     padding-right: 50px
+    
 }
 
 header.tab-merged .right:last-child {
@@ -4561,16 +4573,21 @@ body.ready .progress .bar {
 .nav-wrapper {
     position: relative;
     margin-left: -200px;
-    width: 200px;
+    /* width: 200px; */
+    width: 270px !important;
     float: left;
     display: flex;
     flex-direction: column;
     height: 100%
 }
 
+.inner {
+    width: 270px !important;
+}
+
 .nav-wrapper,
 .nav-wrapper .inner {
-    background: #fff;
+    background: #222;
 }
 
 
@@ -4578,7 +4595,7 @@ body.ready .progress .bar {
 @media screen and (min-width:50em) {
     .nav-wrapper .inner {
         display: flex;
-        flex-flow: column nowrap
+        flex-flow: column nowrap;
     }
 }
 
@@ -4635,7 +4652,7 @@ body.ready .nav-main a {
 .nav-main .menu-item a {
     position: relative;
     white-space: nowrap;
-    color: #222;
+    color: #f7f7f7;
     border-left: 3px solid transparent
 }
 
@@ -5316,15 +5333,43 @@ all and (min-width:50em) and (-ms-high-contrast:active) {
     display: none;
     align-items: center;
     padding: .6em 1.2em;
+    margin-bottom: 0px !important;
     color: #aaa;
     -webkit-font-smoothing: auto;
-    position: relative
+    position: relative;
+
+
 }
 
 .page-editor-tag {
-    color: #000;
+    color: #f7f7f7;
     font-weight: 600;
     text-transform: uppercase;
+}
+
+.business-editor-tag {
+    color: #f7f7f7;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none !important;
+    color: #f7f7f7;
+    background-color: #222;
+    /* width: 100%; */
+    padding: 5px 10px;
+}
+
+.business-editor-tag:hover {
+    color: #48AA8B;
+    transition: 0.3s;
+}
+
+.switch-to-btns {
+    flex-flow: column;
+    margin-bottom: 25px;
+}
+
+.switch-to-btns a {
+    margin: 0;
 }
 
 .logo:hover {
@@ -5453,8 +5498,8 @@ all and (min-width:50em) and (-ms-high-contrast:active) {
     margin-right: auto;
     /* margin-left: auto; */
     padding-right: 0;
-    padding-left: 0;
-    background: #fff;
+    padding-left: 70px;
+    background-color: #ecf2f6;
     border-top: 0 solid #fafafa;
     min-height: 100%
 }
@@ -6632,7 +6677,17 @@ button.status-tag:hover {
 
 .nice-padding {
     padding-left: 20px;
-    padding-right: 20px
+    padding-right: 20px;
+}
+
+.home-header {
+    display: none;
+    background-color: #222;
+}
+
+.user-name {
+    text-transform: uppercase !important;
+    font-weight: 300 !important;
 }
 
 @media screen and (min-width:50em) {

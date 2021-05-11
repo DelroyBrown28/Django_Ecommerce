@@ -2,8 +2,10 @@
 {% load static %}
 
 {% block branding_logo %}
-    <img src="{% static 'images/nueuiblack.png' %}" alt="Custom Project" width="80" />
-    <br>
-    <br>
+<img src="{% static 'images/nueuiwhite.png' %}" alt="Custom Project" width="80" />
+<br>
+<div class="switch-to-btns flexed">
     <small class="page-editor-tag">Page Editor</small>
+    <a href="/admin/" class="business-editor-tag flexed">Business</a>
+</div>
 {% endblock %}
