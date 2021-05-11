@@ -5,7 +5,7 @@ from .models import HomePageCustomisation, NavbarCustomisation
 
 class HomePageCustomisationAdmin(ModelAdmin):
     model = HomePageCustomisation 
-    menu_label = "Home Page Customisation"  
+    menu_label = "Home Page"  
     menu_icon = "fa-exchange" 
     add_to_settings_menu = False 
     exclude_from_explorer = False 
@@ -14,7 +14,7 @@ class HomePageCustomisationAdmin(ModelAdmin):
 
 class NavbarCustomisationAdmin(ModelAdmin):
     model = NavbarCustomisation 
-    menu_label = "Navbar Customisation"  
+    menu_label = "Navbar"  
     menu_icon = "fa-bars" 
     add_to_settings_menu = False 
     exclude_from_explorer = False 
