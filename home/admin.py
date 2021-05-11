@@ -14,13 +14,15 @@ class HomePageCustomisationAdmin(admin.ModelAdmin):
     )
 
 
-class NavbarCustimisationAdmin(admin.ModelAdmin):
+class NavbarCustomisationAdmin(admin.ModelAdmin):
     list_display = (
         'link_1',
         'link_2',
         'link_3',
         'link_4',
     )
+
+ 
 
 
 admin.site.register(HomePageCustomisation)

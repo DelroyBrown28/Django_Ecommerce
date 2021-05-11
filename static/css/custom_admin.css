@@ -4574,16 +4574,14 @@ body.ready .progress .bar {
     position: relative;
     margin-left: -200px;
     /* width: 200px; */
-    width: 270px !important;
+    width: 200px;
     float: left;
     display: flex;
     flex-direction: column;
     height: 100%
 }
 
-.inner {
-    width: 270px !important;
-}
+
 
 .nav-wrapper,
 .nav-wrapper .inner {
@@ -5498,7 +5496,6 @@ all and (min-width:50em) and (-ms-high-contrast:active) {
     margin-right: auto;
     /* margin-left: auto; */
     padding-right: 0;
-    padding-left: 70px;
     background-color: #ecf2f6;
     border-top: 0 solid #fafafa;
     min-height: 100%
@@ -6681,7 +6678,6 @@ button.status-tag:hover {
 }
 
 .home-header {
-    display: none;
     background-color: #222;
 }
 
