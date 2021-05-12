@@ -11423,8 +11423,8 @@ body.menu-pinned.popup .changelist-footer.fixed {
 
 .sidebar-header-wrapper {
     display: none;
-    background-color: #354052;
-    color: #6f7e95;
+    background-color: #222 !important;
+    color: #fff;
     position: fixed;
     top: 0;
     right: 0;
@@ -11471,6 +11471,7 @@ body.menu-pinned.popup .changelist-footer.fixed {
 .sidebar-header-menu-icon {
     font-size: 16px;
     font-size: 1.14286rem;
+    color: #48AA8B;
     vertical-align: middle
 }
 
@@ -11478,7 +11479,11 @@ body.menu-pinned.popup .changelist-footer.fixed {
     display: none;
     font-size: 20px;
     font-size: 1.42857rem;
-    color: #47bac1
+    color: #48AA8B
+}
+
+[class^="icon-"] {
+    color: #fff;
 }
 
 .sidebar-header.sidebar-opened .sidebar-header-menu-icon.icon-menu {
@@ -11590,7 +11595,7 @@ body.menu-pinned.popup .changelist-footer.fixed {
 .sidebar-link:visited,
 .sidebar-link:hover {
     display: block;
-    color: #c0cad8;
+    color: #fff;
     padding: 8px 12px 8px 20px;
     padding: 0.57143rem 0.85714rem 0.57143rem 1.42857rem;
     vertical-align: middle;
@@ -11635,7 +11640,7 @@ body.menu-pinned.popup .changelist-footer.fixed {
     vertical-align: middle;
     margin-right: 6px;
     margin-right: 0.42857rem;
-    color: #6f7e95;
+    color: #48AA8B;
     transition: color .3s
 }
 
@@ -11647,7 +11652,9 @@ body.menu-pinned.popup .changelist-footer.fixed {
     transition: transform .3s, -webkit-transform .3s;
     overflow: hidden;
     text-overflow: ellipsis;
-    white-space: nowrap
+    white-space: nowrap;
+    font-family: 'Lato', sans-serif;
+
 }
 
 html.touchevents .editing .sidebar-link-label {
@@ -11812,7 +11819,7 @@ html.touchevents .sidebar-right-edit {
 }
 
 .sidebar-right-arrow {
-    color: #639af5;
+    color: #48AA8B;
     font-size: 16px;
     font-size: 1.14286rem;
     font-weight: bold !important;
@@ -11890,8 +11897,8 @@ html.touchevents .editing .sidebar-right-arrow {
     left: 0;
     width: 250px;
     width: 17.85714rem;
-    color: #6f7e95;
-    background-color: #ecf2f6;
+    color: #fff;
+    background-color: #222;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch
 }
@@ -12012,7 +12019,7 @@ body.menu-pinned .sidebar-popup-container {
 .sidebar-popup-list-item a,
 .sidebar-popup-list-item a:visited,
 .sidebar-popup-list-item a:hover {
-    color: #6f7e95;
+    color: #fff;
     padding: 8px 20px;
     padding: 0.57143rem 1.42857rem;
     display: block;

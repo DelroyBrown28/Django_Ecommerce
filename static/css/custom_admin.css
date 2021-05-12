@@ -18,7 +18,7 @@ html {
 
 body {
     overflow-x: hidden;
-    position: relative
+    position: relative;
 }
 
 body:after {
@@ -46,47 +46,9 @@ img {
     height: auto
 }
 
-@font-face {
-    font-family: Open Sans;
-    src: url(../../wagtailadmin/fonts/opensans-light.woff2) format("woff2"), url(../../wagtailadmin/fonts/opensans-light.woff) format("woff");
-    font-weight: 300;
-    font-style: normal
-}
 
-@font-face {
-    font-family: Open Sans;
-    src: url(../../wagtailadmin/fonts/opensans-regular.woff2) format("woff2"), url(../../wagtailadmin/fonts/opensans-regular.woff) format("woff");
-    font-weight: 400;
-    font-style: normal
-}
 
-@font-face {
-    font-family: Open Sans;
-    src: url(../../wagtailadmin/fonts/opensans-semibold.woff2) format("woff2"), url(../../wagtailadmin/fonts/opensans-semibold.woff) format("woff");
-    font-weight: 600;
-    font-style: normal
-}
 
-@font-face {
-    font-family: Open Sans;
-    src: url(../../wagtailadmin/fonts/opensans-bold.woff2) format("woff2"), url(../../wagtailadmin/fonts/opensans-bold.woff) format("woff");
-    font-weight: 700;
-    font-style: normal
-}
-
-@font-face {
-    font-family: Roboto Slab;
-    src: url(../../wagtailadmin/fonts/robotoslab-regular.woff2) format("woff2"), url(../../wagtailadmin/fonts/robotoslab-regular.woff) format("woff");
-    font-weight: 400;
-    font-style: normal
-}
-
-@font-face {
-    font-family: Roboto Slab;
-    src: url(../../wagtailadmin/fonts/robotoslab-bold.woff2) format("woff2"), url(../../wagtailadmin/fonts/robotoslab-bold.woff) format("woff");
-    font-weight: 700;
-    font-style: normal
-}
 
 body {
     -webkit-font-smoothing: antialiased;
@@ -693,8 +655,7 @@ body.ready textarea {
     flex: 1;
     position: relative;
     overflow: hidden;
-    background: #4c4e4d;
-    margin-left: 70px;
+    background: #222;
 }
 
 @media screen and (min-width:50em) {
@@ -741,9 +702,10 @@ body.ready textarea {
 
 .c-explorer__header {
     display: block;
-    background-color: #333;
+    background-color: #48AA8B;
     border-bottom: 1px solid #333;
-    color: #fff
+    color: #fff;
+    
 }
 
 .c-explorer__header__title {
@@ -783,7 +745,12 @@ body.ready textarea {
     height: 1.25em;
     margin-right: .25rem;
     vertical-align: text-top;
-    color: #a5a5a5
+    color: #f7f7f7;
+}
+
+.icon[class*=" icon-fa-"]:before {
+    color: #48AA8B;
+    opacity: 1;
 }
 
 @media screen and (min-width:50em) {
@@ -4374,7 +4341,6 @@ header.merged {
 header.tab-merged {
     padding-left: 50px;
     padding-right: 50px
-    
 }
 
 header.tab-merged .right:last-child {
@@ -4627,6 +4593,8 @@ body.ready .nav-main li {
     transition: border-color .2s ease
 }
 
+
+
 .nav-main a {
     -webkit-font-smoothing: auto;
     text-decoration: none;
@@ -4639,6 +4607,7 @@ body.ready .nav-main li {
 
 body.ready .nav-main a {
     transition: border-color .2s ease;
+    color: #fff;
 }
 
 .nav-main a:focus,
@@ -4651,13 +4620,16 @@ body.ready .nav-main a {
     position: relative;
     white-space: nowrap;
     color: #f7f7f7;
-    border-left: 3px solid transparent
+    border-left: 3px solid transparent;
+    font-weight: 300;
+    font-family: 'Lato', sans-serif;
 }
 
 .nav-main .menu-item a:before {
     font-size: 1rem;
     vertical-align: -15%;
-    margin-right: .5em
+    margin-right: .5em;
+    color: #48AA8B;
 }
 
 .nav-main .menu-item a:after {
@@ -4762,7 +4734,7 @@ body.ready .nav-main a {
 }
 
 .nav-submenu .menu-item a:hover {
-    background-color: #fff;
+    background-color: #000;
 }
 
 .nav-submenu li {
@@ -6683,7 +6655,32 @@ button.status-tag:hover {
 
 .user-name {
     text-transform: uppercase !important;
+    font-family: 'Lato', sans-serif;
     font-weight: 300 !important;
+}
+
+/* .summary ul.stats li {
+    color: #6f7e95;
+    font-family: Arial, sans-serif;
+    text-size-adjust: 100%;
+    border-collapse: collapse;
+    padding: 0.57143rem;
+    font-size: 0.92857rem;
+    text-align: left;
+    width: 100%;
+} */
+
+.summary ul.stats li {
+    background-color: #fff;
+    margin: 0px 5px;
+    padding: 5px;
+    width: 30% !important;
+    box-shadow: 0 0.14286rem 0 0 #d0dbe6;
+}
+
+.icon {
+    color: #48AA8B;
+    opacity: 1;
 }
 
 @media screen and (min-width:50em) {

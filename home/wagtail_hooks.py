@@ -6,6 +6,7 @@ from wagtail.contrib.modeladmin.options import (
     ModelAdmin, ModelAdminGroup, modeladmin_register)
 
 
+
 class HomePageCustomisationAdmin(ModelAdmin):
     model = HomePageCustomisation 
     menu_label = "Home Page"  
