@@ -557,7 +557,8 @@ body.menu-pinned.popup #container {
     width: 18.57143rem;
     position: relative;
     margin-right: -300px;
-    margin-right: -21.42857rem
+    margin-right: -21.42857rem;
+    /* display: none; */
 }
 
 @media only screen and (max-width: 960px) {

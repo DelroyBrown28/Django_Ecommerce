@@ -4,29 +4,29 @@ from taggit.admin import Tag
 from allauth.socialaccount.models import SocialToken, SocialAccount, SocialApp
 from wagtail.images.models import Image
 from wagtail.documents.models import Document
-from .models import HomePageCustomisation, NavbarCustomisation
+# from .models import HomePageCustomisation, NavbarCustomisation
 
 
-class HomePageCustomisationAdmin(admin.ModelAdmin):
-    list_display = (
-        'home_page_title',
-        'image',
-    )
+# class HomePageCustomisationAdmin(admin.ModelAdmin):
+#     list_display = (
+#         'home_page_title',
+#         'image',
+#     )
 
 
-class NavbarCustomisationAdmin(admin.ModelAdmin):
-    list_display = (
-        'link_1',
-        'link_2',
-        'link_3',
-        'link_4',
-    )
+# class NavbarCustomisationAdmin(admin.ModelAdmin):
+#     list_display = (
+#         'link_1',
+#         'link_2',
+#         'link_3',
+#         'link_4',
+#     )
 
  
 
 
-admin.site.register(HomePageCustomisation)
-admin.site.register(NavbarCustomisation)
+# admin.site.register(HomePageCustomisation)
+# admin.site.register(NavbarCustomisation)
 admin.site.unregister(Site)
 admin.site.unregister(Tag)
 admin.site.unregister(SocialToken)
