@@ -128,15 +128,7 @@ body {
 }
 
 
-.shop-now-button:hover,
-.shop-now-button:active,
-.shop-now-button:focus,
-.btn-black:hover,
-.btn-black:active,
-.btn-black:focus {
-    background: #333;
-    color: #F0F1EA;
-}
+ 
 
 .text-black {
     color: #000 !important;
